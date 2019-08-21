@@ -59,6 +59,7 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
 
 document.querySelector('.btn-hold').addEventListener('click', function() {
     
+    lastDice = 0;
     if (isPlaying){
         // Add current score to global score 
         scores[activePlayer] += roundScore;
